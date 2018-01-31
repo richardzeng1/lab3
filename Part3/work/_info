@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c6/05/zengrun1/Desktop/CSC258/Lab 3/Part3
+vAdder
+Z1 !s110 1517437667
+!i10b 1
+!s100 eF5clD?Md6b>DMbZ_==@:1
+I5Lh1PIcmoo>LaRAaR9K`R1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1517427728
+Z4 8Part3.v
+Z5 FPart3.v
+L0 117
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1517437666.000000
+Z8 !s107 Part3.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|Part3.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@adder
+vAddOne
+R1
+!i10b 1
+!s100 CcebI7enicBG2nWgVY`dM3
+I>^A?]ZE@=RJ32Bf<X08dS1
+R2
+R0
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@add@one
+vfullAdder
+R1
+!i10b 1
+!s100 [b^@KzzHODeL05Rk=bIhL3
+IQ<Y9mT?S0QH3=E63iBT9`0
+R2
+R0
+R3
+R4
+R5
+L0 161
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nfull@adder
+vPart3
+R1
+!i10b 1
+!s100 hL2_jL4d6<Z7iZVH@]2c32
+II6a?O<8=U[L9]0FbBFPlh0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@part3
+vseven_seg_decoder
+R1
+!i10b 1
+!s100 ]656:J[nZ;<<m4dPTdLJz3
+IDPK6k5n;[nMgLf1C4YjFF0
+R2
+R0
+R3
+R4
+R5
+L0 173
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

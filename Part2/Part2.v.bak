@@ -1,0 +1,57 @@
+//SW[2:0] data inputs
+//SW[9] select signal
+
+
+module mux(LEDR, SW);
+    input [9:0] SW; // 1-4 FIRST DIGIT, 5-8 SECOND DIGIT,0 FIRST CARRY
+    output [9:0] LEDR;
+    wire WIRE0;
+	 wire WIRE1;
+	 wire WIRE2;
+
+	 fullAdder bo(
+	     .a(SW[1]),
+		  .b(SW[5]),
+		  .c(SW[0]),
+		  .s(LEDR[0]),
+		  .w(WIRE0)
+	 );
+	 
+	 fullAdder b1(
+	     .a(SW[2]),
+		  .b(SW[6]),
+		  .c(WIRE0),
+		  .s(LEDR[1]),
+		  .w(WIRE1)
+	 );
+	 
+	 fullAdder b2(
+	     .a(SW[3]),
+		  .b(SW[7]),
+		  .c(WIRE1),
+		  .s(LEDR[2]),
+		  .w(WIRE2)
+	 );
+	 
+	 fullAdder b3(
+	     .a(SW[4]),
+		  .b(SW[8]),
+		  .c(WIRE2),
+		  .s(LEDR[3]),
+		  .w(LEDR[4])
+	 );
+    
+
+endmodule
+
+module fullAdder(a, b, c, s, w);
+    input a; // bits to add
+    input b; 
+    input c; // carry value
+	 output w; // carry out
+    output s; //output value
+
+    assign s = a ^ b^ c;
+	 assign w = (a&b) | (a&c) | (b&c);
+
+endmodule
